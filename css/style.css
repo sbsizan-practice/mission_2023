@@ -9,3 +9,46 @@
     border: none;
     list-style: none;
 }
+
+/* -------------- Header Section -----------  */
+
+header{
+    background: url(./../assets/imgs/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 200px 10%;
+    display: flex;
+    justify-content: right;    
+}
+.header__content{
+    text-align: right;
+}
+.header__content h1{
+    font-size: 65px;
+    font-weight: 700;
+    color: #151414;
+}
+.header__content p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #444343;
+    margin-top: 36px;
+}
+.header__content a{
+    display: inline-block;
+    background: #E08668;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 14px 16px;
+    border-radius: 4px;
+    margin-top: 36px;
+    border: 2px solid transparent;
+    transition: 0.3s all ease-in-out;
+}
+.header__content a:hover{
+    background: #dd9076;
+    border: 2px solid #e08769;
+    box-shadow: 1px 1px 6px #444343;
+    color: #fceaea;
+}
