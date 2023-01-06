@@ -52,3 +52,67 @@ header{
     box-shadow: 1px 1px 6px #444343;
     color: #fceaea;
 }
+
+
+/* ------------ Failure Section ---------  */
+#failure{
+    padding: 120px 0;
+}
+.failure__content{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.failure__content-img{
+    padding: 50px 150px;
+    flex-basis: 50%;
+    position: relative;
+}
+.failure__content-img::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 70%;
+    width: 50%;
+    margin-left: 10%;
+    background: transparent;
+    border: 20px solid #E0A8B1;
+    border-radius: 8px;
+    z-index: -1;
+}
+.failure__content-img img{
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    z-index: 2;
+}
+
+.failure__text-content{
+    padding-left: 50px;
+    flex-basis: 50%;
+}
+.failure__text-content h2{
+    font-size: 40px;
+    color: #151414;
+}
+.failure__text-content p{
+    font-size: 16px;
+    color: #444343;
+    padding-right: 200px;
+    margin: 36px 0;
+}
+.failure__text-content ul li{
+    margin: 0 0 10px 36px;
+    position: relative;
+}
+.failure__text-content ul li::before{
+    position: absolute;
+    content: '\2714';
+    color: green;
+    left: -36px;
+    font-weight: 600;
+}
