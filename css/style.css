@@ -328,6 +328,7 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    padding-left: 360px;
 }
 .footer__form h3{
     font-size: 30px;
@@ -336,7 +337,7 @@ header{
 }
 
 .footer__form form input[type='email'] {
-    width: 40%;
+    width: 100%;
     background: transparent;
     border: 1px solid #FFFFFF;
     color: #ecebeb;
