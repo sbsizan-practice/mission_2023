@@ -18,7 +18,8 @@ header{
     background-position: center;
     padding: 200px 10%;
     display: flex;
-    justify-content: right;    
+    justify-content: right;   
+    background-repeat: no-repeat; 
 }
 .header__content{
     text-align: right;
@@ -43,13 +44,11 @@ header{
     padding: 14px 16px;
     border-radius: 4px;
     margin-top: 36px;
-    border: 2px solid transparent;
     transition: 0.3s all ease-in-out;
 }
 .header__content a:hover{
     background: #dd9076;
-    border: 2px solid #e08769;
-    box-shadow: 1px 1px 6px #444343;
+    box-shadow: 1px 1px 5px #444343;
     color: #fceaea;
 }
 
@@ -161,6 +160,9 @@ header{
 }
 
 /* ------------- Certification Section ------------  */
+#certification{
+    margin-bottom: 100px;
+}
 #certification h2{
     font-size: 40px;
     color: #151414;
@@ -188,6 +190,11 @@ header{
     font-weight: 500;
     color: #444343;
 }
+.certification__text-content a{
+    font-weight: 600;
+    font-size: 18px;
+    color: #FF194F;
+}
 .certification__text-content p:last-child{
     font-size: 14px;
     font-weight: 400;
@@ -198,4 +205,160 @@ header{
     width: 150px;
     height: auto;
     border-radius: 5px;
+}
+
+
+/* -------------- Mindset Section -----------  */
+
+.mindset__container{
+    width: 80%;
+    padding: 60px 50px;
+    background: url(./../assets/imgs/watch.png);
+    background-size: cover;
+    background-position: top left;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+.mindset__container::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to right, #E08668, #e0866800);
+}
+.mindset__container .mindset__content{
+    z-index: 3;
+    position: relative;
+}
+.mindset__container .mindset__content h2{
+    font-size: 40px;
+    color: #FFFFFF;
+    font-weight: 700;
+}
+.mindset__container .mindset__content a{
+    font-size: 24px;
+    color: #E08668;
+    font-weight: 600;
+    display: inline-block;
+    background: #FFFFFF;
+    padding: 8px 12px;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: 0.3s all ease-in-out;
+}
+.mindset__container .mindset__content a:hover{
+    background: #ecebeb;
+    box-shadow: 1px 1px 5px #444343;
+}
+
+
+
+/* -------------- Footer Section ------------  */
+#footer{
+    background: #151414;
+    margin-top: 150px;
+}
+.footer__container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 100px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.footer__text-content{
+    color: #FFFFFF;
+    flex-basis: 50%;
+}
+.footer__text-content h2{
+    font-size: 45px;
+    margin-bottom: 26px;
+}
+.footer-text{
+    font-size: 16px;
+    padding-right: 200px;
+    margin-bottom: 24px;
+}
+.footer-contact{
+    color: #FFFFFF;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.footer-contact a{
+    color: #FFFFFF;
+    font-weight: 600;
+}
+.social-icons{
+    margin-top: 24px;
+}
+.social-icons .icon{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    position: relative;
+    margin-right: 8px;
+}
+.social-icons .icon i{
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.social-icons .icon:nth-child(1) i{
+    color: #006AFF;
+}
+.social-icons .icon:nth-child(2) i{
+    color: #1DA1F2;
+}
+.social-icons .icon:nth-child(3) i{
+    color: #DE1522;
+}
+
+    
+
+/* -------- Footer Form --------  */
+.footer__form{
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.footer__form h3{
+    font-size: 30px;
+    font-weight: 700px;
+    color: #FFFFFF;
+}
+
+.footer__form form input[type='email'] {
+    width: 40%;
+    background: transparent;
+    border: 1px solid #FFFFFF;
+    color: #ecebeb;
+    padding: 24px 12px;
+    border-radius: 8px;
+    margin: 24px 0;
+    display: block;
+}
+.footer__form form input::placeholder{
+    font-size: 16px;
+}
+.footer__form form button{
+    display: inline-block;
+    background: #FFFFFF;
+    padding: 14px 16px;
+    font-size: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #E08668;
+    font-weight: 600;
+    transition: 0.3s all ease-in-out;
+}
+.footer__form form button:hover{
+    box-shadow: 1px 1px 5px #e6e6e6;
 }
